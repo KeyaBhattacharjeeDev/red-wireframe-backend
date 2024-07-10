@@ -10,6 +10,7 @@ dotenv.config();
 const genAI = new GoogleGenerativeAI(process.env.API_KEY);
 const app = express();
 const port = process.env.PORT || 3001;
+console.log("hello");
 
 // CORS middleware (adjust allowed origins as needed)
 app.use(cors({ origin: 'http://localhost:3000' })); // Replace with your React app's origin
